@@ -23,7 +23,7 @@ function regTest(data){
 function csvDataToArray(data) {
   var lines = (data.split("\r\n").length > 1 ? data.split("\r\n") : data.split("\n"))
   lines.pop()
-  var arr = lines.map(item=>regTest(item))
+  var arr = lines.map(item=>((item[0] == ',' ? [''] : []).concat(regTest(item))))
   return arr
  }
 
