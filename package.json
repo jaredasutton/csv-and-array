@@ -1,6 +1,6 @@
 {
   "name": "csv-and-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package for reading CSV data as an array and writing CSV data from an array.",
   "main": "index.js",
   "scripts": {
